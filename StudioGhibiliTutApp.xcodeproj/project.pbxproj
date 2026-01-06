@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		DFEB1C582F0C68670067AD5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFEB1C422F0C68650067AD5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFEB1C492F0C68650067AD5D;
+			remoteInfo = StudioGhibiliTutApp;
+		};
+		DFEB1C622F0C68670067AD5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFEB1C422F0C68650067AD5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFEB1C492F0C68650067AD5D;
+			remoteInfo = StudioGhibiliTutApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFEB1C4A2F0C68650067AD5D /* StudioGhibiliTutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudioGhibiliTutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEB1C572F0C68670067AD5D /* StudioGhibiliTutAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudioGhibiliTutAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFEB1C612F0C68670067AD5D /* StudioGhibiliTutAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StudioGhibiliTutAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DFEB1C4C2F0C68650067AD5D /* StudioGhibiliTutApp */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StudioGhibiliTutApp;
+			sourceTree = "<group>";
+		};
+		DFEB1C5A2F0C68670067AD5D /* StudioGhibiliTutAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StudioGhibiliTutAppTests;
+			sourceTree = "<group>";
+		};
+		DFEB1C642F0C68670067AD5D /* StudioGhibiliTutAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = StudioGhibiliTutAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFEB1C472F0C68650067AD5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEB1C542F0C68670067AD5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEB1C5E2F0C68670067AD5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFEB1C412F0C68650067AD5D = {
+			isa = PBXGroup;
+			children = (
+				DFEB1C4C2F0C68650067AD5D /* StudioGhibiliTutApp */,
+				DFEB1C5A2F0C68670067AD5D /* StudioGhibiliTutAppTests */,
+				DFEB1C642F0C68670067AD5D /* StudioGhibiliTutAppUITests */,
+				DFEB1C4B2F0C68650067AD5D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFEB1C4B2F0C68650067AD5D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFEB1C4A2F0C68650067AD5D /* StudioGhibiliTutApp.app */,
+				DFEB1C572F0C68670067AD5D /* StudioGhibiliTutAppTests.xctest */,
+				DFEB1C612F0C68670067AD5D /* StudioGhibiliTutAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFEB1C492F0C68650067AD5D /* StudioGhibiliTutApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFEB1C6B2F0C68670067AD5D /* Build configuration list for PBXNativeTarget "StudioGhibiliTutApp" */;
+			buildPhases = (
+				DFEB1C462F0C68650067AD5D /* Sources */,
+				DFEB1C472F0C68650067AD5D /* Frameworks */,
+				DFEB1C482F0C68650067AD5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DFEB1C4C2F0C68650067AD5D /* StudioGhibiliTutApp */,
+			);
+			name = StudioGhibiliTutApp;
+			packageProductDependencies = (
+			);
+			productName = StudioGhibiliTutApp;
+			productReference = DFEB1C4A2F0C68650067AD5D /* StudioGhibiliTutApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFEB1C562F0C68670067AD5D /* StudioGhibiliTutAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFEB1C6E2F0C68670067AD5D /* Build configuration list for PBXNativeTarget "StudioGhibiliTutAppTests" */;
+			buildPhases = (
+				DFEB1C532F0C68670067AD5D /* Sources */,
+				DFEB1C542F0C68670067AD5D /* Frameworks */,
+				DFEB1C552F0C68670067AD5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFEB1C592F0C68670067AD5D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DFEB1C5A2F0C68670067AD5D /* StudioGhibiliTutAppTests */,
+			);
+			name = StudioGhibiliTutAppTests;
+			packageProductDependencies = (
+			);
+			productName = StudioGhibiliTutAppTests;
+			productReference = DFEB1C572F0C68670067AD5D /* StudioGhibiliTutAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DFEB1C602F0C68670067AD5D /* StudioGhibiliTutAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFEB1C712F0C68670067AD5D /* Build configuration list for PBXNativeTarget "StudioGhibiliTutAppUITests" */;
+			buildPhases = (
+				DFEB1C5D2F0C68670067AD5D /* Sources */,
+				DFEB1C5E2F0C68670067AD5D /* Frameworks */,
+				DFEB1C5F2F0C68670067AD5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFEB1C632F0C68670067AD5D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DFEB1C642F0C68670067AD5D /* StudioGhibiliTutAppUITests */,
+			);
+			name = StudioGhibiliTutAppUITests;
+			packageProductDependencies = (
+			);
+			productName = StudioGhibiliTutAppUITests;
+			productReference = DFEB1C612F0C68670067AD5D /* StudioGhibiliTutAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFEB1C422F0C68650067AD5D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					DFEB1C492F0C68650067AD5D = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					DFEB1C562F0C68670067AD5D = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = DFEB1C492F0C68650067AD5D;
+					};
+					DFEB1C602F0C68670067AD5D = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = DFEB1C492F0C68650067AD5D;
+					};
+				};
+			};
+			buildConfigurationList = DFEB1C452F0C68650067AD5D /* Build configuration list for PBXProject "StudioGhibiliTutApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFEB1C412F0C68650067AD5D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DFEB1C4B2F0C68650067AD5D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFEB1C492F0C68650067AD5D /* StudioGhibiliTutApp */,
+				DFEB1C562F0C68670067AD5D /* StudioGhibiliTutAppTests */,
+				DFEB1C602F0C68670067AD5D /* StudioGhibiliTutAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFEB1C482F0C68650067AD5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEB1C552F0C68670067AD5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEB1C5F2F0C68670067AD5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFEB1C462F0C68650067AD5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEB1C532F0C68670067AD5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFEB1C5D2F0C68670067AD5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFEB1C592F0C68670067AD5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFEB1C492F0C68650067AD5D /* StudioGhibiliTutApp */;
+			targetProxy = DFEB1C582F0C68670067AD5D /* PBXContainerItemProxy */;
+		};
+		DFEB1C632F0C68670067AD5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFEB1C492F0C68650067AD5D /* StudioGhibiliTutApp */;
+			targetProxy = DFEB1C622F0C68670067AD5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DFEB1C692F0C68670067AD5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFEB1C6A2F0C68670067AD5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DFEB1C6C2F0C68670067AD5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "StudioGhibiliTutApp/Preview\\ Assets/SampleData.json StudioGhibiliTutApp/Preview\\ Assets";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.terrancegriffith.StudioGhibiliTutApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFEB1C6D2F0C68670067AD5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "StudioGhibiliTutApp/Preview\\ Assets/SampleData.json StudioGhibiliTutApp/Preview\\ Assets";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.terrancegriffith.StudioGhibiliTutApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFEB1C6F2F0C68670067AD5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.terrancegriffith.StudioGhibiliTutAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudioGhibiliTutApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StudioGhibiliTutApp";
+			};
+			name = Debug;
+		};
+		DFEB1C702F0C68670067AD5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.terrancegriffith.StudioGhibiliTutAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StudioGhibiliTutApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StudioGhibiliTutApp";
+			};
+			name = Release;
+		};
+		DFEB1C722F0C68670067AD5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.terrancegriffith.StudioGhibiliTutAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudioGhibiliTutApp;
+			};
+			name = Debug;
+		};
+		DFEB1C732F0C68670067AD5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.terrancegriffith.StudioGhibiliTutAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StudioGhibiliTutApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFEB1C452F0C68650067AD5D /* Build configuration list for PBXProject "StudioGhibiliTutApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFEB1C692F0C68670067AD5D /* Debug */,
+				DFEB1C6A2F0C68670067AD5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFEB1C6B2F0C68670067AD5D /* Build configuration list for PBXNativeTarget "StudioGhibiliTutApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFEB1C6C2F0C68670067AD5D /* Debug */,
+				DFEB1C6D2F0C68670067AD5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFEB1C6E2F0C68670067AD5D /* Build configuration list for PBXNativeTarget "StudioGhibiliTutAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFEB1C6F2F0C68670067AD5D /* Debug */,
+				DFEB1C702F0C68670067AD5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFEB1C712F0C68670067AD5D /* Build configuration list for PBXNativeTarget "StudioGhibiliTutAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFEB1C722F0C68670067AD5D /* Debug */,
+				DFEB1C732F0C68670067AD5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFEB1C422F0C68650067AD5D /* Project object */;
+}
