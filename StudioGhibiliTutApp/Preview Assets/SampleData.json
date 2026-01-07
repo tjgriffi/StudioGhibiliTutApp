@@ -100,7 +100,7 @@
         "url": "https://ghibliapi.vercel.app/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49"
     }
     ],
-    people: [
+    "people": [
         {
           "id": "598f7048-74ff-41e0-92ef-87dc1ad980a9",
           "name": "Lusheeta Toel Ul Laputa",

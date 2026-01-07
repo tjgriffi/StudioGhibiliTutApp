@@ -9,11 +9,11 @@ import SwiftUI
 
 struct FilmListView: View {
     
-    @State var filmsViewModel = FilmsViewModel()
+    var filmsViewModel: FilmsViewModel
     
     var body: some View {
         
-        Group {
+        NavigationStack {
             switch filmsViewModel.state {
             case .idle:
                 Text("No Films yet")
@@ -40,5 +40,7 @@ struct FilmListView: View {
 }
 
 #Preview {
-    FilmListView()
+    @State @Previewable var viewModel = FilmsViewModel(ghibliService: MockGhibliService())
+    
+    FilmListView(filmsViewModel: viewModel)
 }
