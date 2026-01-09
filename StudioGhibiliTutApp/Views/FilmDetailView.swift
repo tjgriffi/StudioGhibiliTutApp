@@ -13,31 +13,37 @@ struct FilmDetailView: View {
     @State private var filmDetailViewModel = FilmDetailViewModel()
     
     var body: some View {
-        VStack(alignment: .leading) {
-            
-            Text(film.title)
-            Divider()
-            Text("Characters: ")
-                .font(.title3)
-            
-            switch filmDetailViewModel.state {
-            case .idle:
-                EmptyView()
-            case .loading:
-                ProgressView()
-            case .loaded(let people):
-                ForEach(people) { person in
-                    Text(person.name)
+        ScrollView {
+            VStack(alignment: .leading) {
+                
+                FilmImageView(urlString: film.bannerImage)
+                    .frame(height: 300)
+                
+                
+                Text(film.title)
+                Divider()
+                Text("Characters: ")
+                    .font(.title3)
+                
+                switch filmDetailViewModel.state {
+                case .idle:
+                    EmptyView()
+                case .loading:
+                    ProgressView()
+                case .loaded(let people):
+                    ForEach(people) { person in
+                        Text(person.name)
+                    }
+                case .error(let error):
+                    Text(error)
                 }
-            case .error(let error):
-                Text(error)
+                
+                
             }
-            
-            
-        }
-        .padding()
-        .task {
-            await filmDetailViewModel.fetch(for: film)
+            .padding()
+            .task {
+                await filmDetailViewModel.fetch(for: film)
+            }
         }
     }
 }
