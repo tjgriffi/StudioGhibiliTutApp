@@ -15,7 +15,23 @@ struct FilmDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                
+                HStack(alignment: .center) {
+                    Text(film.title)
+                        .bold()
+                    
+                        Button {
+                            filmDetailViewModel.favoriteButtonPressed(filmID: film.id)
+                        } label: {
+                            if filmDetailViewModel.favorited {
+                                Image(systemName: "heart.fill")
+                                    .foregroundStyle(.pink)
+                            } else {
+                                Image(systemName: "heart")
+                                    .foregroundStyle(.black)
+                            }
+                        }
+
+                }
                 FilmImageView(urlString: film.bannerImage)
                     .frame(height: 300)
                 

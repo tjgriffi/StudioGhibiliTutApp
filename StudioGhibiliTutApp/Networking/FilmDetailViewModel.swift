@@ -20,6 +20,7 @@ class FilmDetailViewModel {
     
     var people: [Person] = []
     var state: State = .idle
+    var favorited = false
     
     let service: GhibliService
     
@@ -59,28 +60,45 @@ class FilmDetailViewModel {
             state = .error("unknown error")
         }
     }
+    
+    func favoriteButtonPressed(filmID: String) {
+        
+        // Toggle favorite
+        favorited.toggle()
+        
+//        if favorited {
+//            // Update our list of favorited movies
+//            FavoritesList.shared.addToFavorites(filmID: filmID)
+//        } else {
+//            FavoritesList.shared.removeFromFavorites(filmID: filmID)
+//        }
+        
+        favorited ? FavoritesList.addToFavorites(filmID: filmID) : FavoritesList.removeFromFavorites(filmID: filmID)
+        print(filmID)
+        print(FavoritesList.favorites)
+    }
 }
 
 
 import Playgrounds
 
-#Playground {
-    let service = MockGhibliService()
-    let vm = FilmDetailViewModel(service: service)
-    
-    let film = service.fetchFilm()
-    await vm.fetch(for: film)
-    
-    switch vm.state {
-        case .idle:
-            print("Idle")
-        case .loading:
-            print("loading")
-        case .loaded(let people):
-            for person in people {
-                print(person)
-            }
-        case .error(let error):
-            print(error)
-    }
-}
+//#Playground {
+//    let service = MockGhibliService()
+//    let vm = FilmDetailViewModel(service: service)
+//    
+//    let film = service.fetchFilm()
+//    await vm.fetch(for: film)
+//    
+//    switch vm.state {
+//        case .idle:
+//            print("Idle")
+//        case .loading:
+//            print("loading")
+//        case .loaded(let people):
+//            for person in people {
+//                print(person)
+//            }
+//        case .error(let error):
+//            print(error)
+//    }
+//}

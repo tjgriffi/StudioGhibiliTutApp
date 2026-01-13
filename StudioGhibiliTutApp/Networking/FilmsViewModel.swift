@@ -20,6 +20,7 @@ class FilmsViewModel {
     
     var state = State.idle
     var films: [Film] = []
+    var favoriteFilms: [String] = []    // List of film identifiers (cause it's simpler to store)
     
     private let service: GhibliService
     

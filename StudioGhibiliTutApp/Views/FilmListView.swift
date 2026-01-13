@@ -11,6 +11,7 @@ struct FilmListView: View {
     
 //    var filmsViewModel: FilmsViewModel
     @State var films: [Film]
+    @State private var favorites: [String] = FavoritesList.favorites
     
     var body: some View {
         
@@ -21,6 +22,16 @@ struct FilmListView: View {
                     FilmImageView(urlString: film.image)
                         .frame(width: 100, height: 150)
                     Text(film.title)
+                    
+                    if favorites.contains(where: { favoriteID in
+                        film.id == favoriteID
+                    }) {
+                        Image(systemName: "heart.fill")
+                            .foregroundStyle(.pink)
+                    } else {
+                        Image(systemName: "heart")
+                    }
+                    
                 }
                 
             }
