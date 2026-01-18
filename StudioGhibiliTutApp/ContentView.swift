@@ -9,23 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var filmsViewModel = FilmsViewModel(ghibliService: MockGhibliService())
+    @State private var filmsViewModel = FilmsViewModel()
+    @State private var favoritesViewModel = FavoriteViewModel()
     
     var body: some View {
         TabView {
             Tab("Films", systemImage: "movieclapper") {
-                FilmsView(filmsViewModel: filmsViewModel)
+                FilmsView(filmsViewModel: filmsViewModel, favoritesViewModel: favoritesViewModel)
             }
             Tab("Favorites", systemImage: "heart") {
-                FavoritesView(filmsViewModel: filmsViewModel)
+                FavoritesView(filmsViewModel: filmsViewModel, favoritesViewModel: favoritesViewModel)
             }
             Tab("Settings", systemImage: "gear") {
                 SettingsView()
             }
             Tab(role: .search) {
-                SearchView()
+                SearchView(searchViewModel: SearchViewModel(), favoriteViewModel: favoritesViewModel)
             }
-            
+        }
+        .task {
+            favoritesViewModel.load()
+            await filmsViewModel.fetch()
         }
     }
 }

@@ -10,28 +10,30 @@ import SwiftUI
 struct FilmDetailView: View {
     
     let film: Film
+    let favoritesViewModel: FavoriteViewModel
+    
     @State private var filmDetailViewModel = FilmDetailViewModel()
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
-                HStack(alignment: .center) {
-                    Text(film.title)
-                        .bold()
-                    
-                        Button {
-                            filmDetailViewModel.favoriteButtonPressed(filmID: film.id)
-                        } label: {
-                            if filmDetailViewModel.favorited {
-                                Image(systemName: "heart.fill")
-                                    .foregroundStyle(.pink)
-                            } else {
-                                Image(systemName: "heart")
-                                    .foregroundStyle(.black)
-                            }
-                        }
-
-                }
+//                HStack(alignment: .center) {
+//                    Text(film.title)
+//                        .bold()
+//                    
+//                        Button {
+//                            filmDetailViewModel.favoriteButtonPressed(filmID: film.id)
+//                        } label: {
+//                            if filmDetailViewModel.favorited {
+//                                Image(systemName: "heart.fill")
+//                                    .foregroundStyle(.pink)
+//                            } else {
+//                                Image(systemName: "heart")
+//                                    .foregroundStyle(.black)
+//                            }
+//                        }
+//
+//                }
                 FilmImageView(urlString: film.bannerImage)
                     .frame(height: 300)
                 
@@ -57,13 +59,20 @@ struct FilmDetailView: View {
                 
             }
             .padding()
-            .task {
-                await filmDetailViewModel.fetch(for: film)
-            }
+        }
+        .toolbar {
+            FavoriteButton(filmID: film.id, favoritesViewModel: favoritesViewModel)
+        }
+        .task(id: film) {
+            await filmDetailViewModel.fetch(for: film)
         }
     }
 }
 
+
+
 #Preview {
-    FilmDetailView(film: Film.preview )
+    NavigationStack {
+        FilmDetailView(film: Film.preview, favoritesViewModel: FavoriteViewModel(favoriteStorage: MockFavoriteStorage()))
+    }
 }

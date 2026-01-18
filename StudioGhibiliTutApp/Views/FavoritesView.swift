@@ -9,13 +9,23 @@ import SwiftUI
 
 struct FavoritesView: View {
     
-    @State var filmsViewModel: FilmsViewModel
+    let filmsViewModel: FilmsViewModel
+    let favoritesViewModel: FavoriteViewModel
     
     var films: [Film] {
         // TODO: Get favorites
         // retrieve ids from storage
         // get data for favorite ids from films data
-        return []
+        let favorites = favoritesViewModel.favoriteIDs
+        switch filmsViewModel.state {
+        case .loaded(let films):
+            return films.filter { film in
+                favorites.contains(film.id)
+            }
+        default:
+            return []
+        }
+        
     }
     
     var body: some View {
@@ -24,20 +34,10 @@ struct FavoritesView: View {
                 if films.isEmpty {
                     ContentUnavailableView("No favorites yet", systemImage: "heart")
                 } else {
-                    List(films) { film in
-                        
-                        NavigationLink(value: film) {
-                            HStack {
-                                FilmImageView(urlString: film.image)
-                                    .frame(width: 100, height: 150)
-                                Text(film.title)
-                            }
-                            
+                    FilmListView(films: films, favoritesViewModel: favoritesViewModel)
+                        .navigationDestination(for: Film.self) { film in
+                            FilmDetailView(film: film, favoritesViewModel: favoritesViewModel)
                         }
-                    }
-                    .navigationDestination(for: Film.self) { film in
-                        FilmDetailView(film: film)
-                    }
                 }
             }
             .navigationTitle("Favorites")
@@ -46,5 +46,5 @@ struct FavoritesView: View {
 }
 
 #Preview {
-    FavoritesView(filmsViewModel: FilmsViewModel(ghibliService: MockGhibliService()))
+    FavoritesView(filmsViewModel: FilmsViewModel.preview, favoritesViewModel: FavoriteViewModel.preview)
 }

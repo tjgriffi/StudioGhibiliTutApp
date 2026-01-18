@@ -11,15 +11,8 @@ import Observation
 @Observable
 class FilmDetailViewModel {
     
-    enum State: Equatable {
-        case idle
-        case loading
-        case loaded([Person])
-        case error(String)
-    }
-    
     var people: [Person] = []
-    var state: State = .idle
+    var state: LoadingState<[Person]> = .idle
     var favorited = false
     
     let service: GhibliService
@@ -30,7 +23,7 @@ class FilmDetailViewModel {
     
     func fetch(for film: Film) async {
         
-        guard state != .loading else { return }
+        guard !state.isLoading else { return }
         
         state = .loading
         var loadedPeople = [Person]()
@@ -49,6 +42,7 @@ class FilmDetailViewModel {
                 for try await person in group {
                     loadedPeople.append(person)
                 }
+                
                 
                 state = .loaded(loadedPeople)
                 people = loadedPeople
